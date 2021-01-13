@@ -1,0 +1,13 @@
+In the file package.JSON:
+
+Line 11 -- "test": "jest --coverage":
+
+The default value for "test" is replaced with jest to call the testing library jest when `npm test` is run on the root diretory from the terminal. 
+' -- coverage' is added after 'jest' to pass the 'coverage' parameter to jest which will create test reports within a new directory called coverage.
+These reports are generated as simple HTML and can be viewed as any other HTML page could
+______________________________________________________________________________________________________________________________________________________________
+
+in the 'coverage' directory:
+
+navigate to coverage/lcov-report to find the index.HTML file which can be run using liveServer. This will show, line by line, each test that was run and how much of the specified file was covered by the test.
+each unique test will get its own HTML file which shows, line by line, the success or failure of each line of code in the original file
